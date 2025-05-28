@@ -51,7 +51,7 @@ app.post('/api/scan', async (req, res) => {
       detectedBy: malicious,
     });
   } catch (err) {
-    res.status(500).json({ error: 'VirusTotal API error or network issue' });
+    res.status(500).json({ error: 'Network issue' });
   }
 });
 
